@@ -116,6 +116,25 @@ class AirConditionerTest {
             myAC.increaseTemperature();
             assertEquals(27, myAC.getTemperature());
         }
+
+        @Test
+            public void myACisOff_increaseTemperature_temperatureIsNotIncreased(){
+
+            assertTrue(myAC.isOff());
+            myAC.increaseTemperature();
+            assertEquals(26 myAC.getTemperature());
+
+        } 
+
+   
+        @Test
+        public void myACisOn_temperatureIs26Degrees_increaseTemperature5times_TemperatureShouldNotExceed30Degree(){
+
+            myAC.turnOnAC();
+            for(int count = 0; count < 5; count++){myAC.increaseTemperature();}
+
+            assertEquals(30, myAC.getTemperature());
+        } 
 }
 
 
