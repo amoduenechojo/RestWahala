@@ -28,14 +28,19 @@ public class AirConditioner{
 
     public void decreaseTemperature() {
 
-        if (!isOff() && temperature >= 16){
+        if (!isOff() && temperature > 16){
             temperature -= 1;
         }
 
     }
 
-    public void increaseTemperature() {
+     public void increaseTemperature() {
+        
+        if(!isOn) return;
+        if(temperature == 30) return;
+
         temperature +=1;
+        
     }
 
 
