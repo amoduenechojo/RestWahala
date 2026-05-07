@@ -34,22 +34,7 @@ public class AirConditioner{
 
     }
 
+<<<<<<< HEAD:Java/AirConditioner/src/AirConditioner.java
      public void increaseTemperature() {
-        
-        if(!isOn) return;
-        if(temperature == 30) return;
-
-        temperature +=1;
-        
-    }
-
-
+	isOn = true;
 }
-
-
-
-
-
-
-
-

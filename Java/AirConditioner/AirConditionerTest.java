@@ -92,6 +92,37 @@ class AirConditionerTest {
 
 
 
+
+         @Test
+        public void testThatTemperatureIs26Degrees_reduceTemperature7Times_temperatureShouldNotGoBelow16(){
+
+            AirConditioner myAC = new AirConditioner();
+            myAC.turnOnAC();
+
+           for(int count = 0; count <7; count++) myAC.decreaseTemperature();
+           assertEquals(16, myAC.getTemperature);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         @Test
         public void testThatTemperatureCanBeIncreased_by1(){
 
@@ -101,7 +132,6 @@ class AirConditionerTest {
             myAC.increaseTemperature();
 
             assertEquals(27, myAC.getTemperature();
-
 
         }
 
@@ -117,6 +147,10 @@ class AirConditionerTest {
             assertEquals(27, myAC.getTemperature());
         }
 
+<<<<<<< HEAD:Java/AirConditioner/src/AirConditionerTest.java
+=======
+        
+>>>>>>> dcfc5d7 (Diaries):Java/AirConditioner/AirConditionerTest.java
         @Test
             public void myACisOff_increaseTemperature_temperatureIsNotIncreased(){
 
@@ -135,8 +169,16 @@ class AirConditionerTest {
 
             assertEquals(30, myAC.getTemperature());
         } 
-}
+<<<<<<< HEAD:Java/AirConditioner/src/AirConditionerTest.java
+=======
 
+
+
+        
+
+       
+>>>>>>> dcfc5d7 (Diaries):Java/AirConditioner/AirConditionerTest.java
+}
 
 
 
